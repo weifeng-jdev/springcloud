@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springcloud-mq-producer
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        group: SPRING-CLOUD
+        file-extension: yaml
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: SPRING-CLOUD
+  profiles:
+    active: dev
