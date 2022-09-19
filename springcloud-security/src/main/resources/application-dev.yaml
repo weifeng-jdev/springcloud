@@ -1,13 +1,3 @@
 spring:
-  datasource:
-    username: root
-    password: wf.1995081613
-    url: jdbc:mysql://124.221.213.10:3306/test?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-security:
-  secretKey: fUjXn2r5u8x/A%D*G-KaPdSgVkYp3s6v9y$B&E(H+MbQeThWmZq4t7w!z%C*F-J@
-  expireTimeOut: 86400000
-  rememberExpireTimeOut: 604800000
-  issuer: amano
-  headerToken: authToken
+  redis:
+    password:

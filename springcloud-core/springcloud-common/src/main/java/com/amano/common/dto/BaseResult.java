@@ -22,7 +22,7 @@ public class BaseResult<T> {
 
     public BaseResult(int code, String msg) {
         this.code = code;
-        this.msg = "msg";
+        this.msg = msg;
     }
 
     public BaseResult(Integer code, String msg, T data) {

@@ -29,7 +29,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.addFilterBefore(new JwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and().logout().logoutUrl("/api/auth/logout")
                 .and().authorizeRequests()
                     .antMatchers("/").permitAll()
                     .antMatchers(HttpMethod.POST, "/api/auth/login").permitAll()

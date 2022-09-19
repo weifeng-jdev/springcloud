@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>springcloud-common</module>
         <module>springcloud-mq-producer</module>
         <module>springcloud-mq-consumer</module>
         <module>springcloud-security</module>
+        <module>springcloud-core/springcloud-common</module>
+        <module>springcloud-core/springcloud-core-redis-starter</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.11</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.amano</groupId>
     <artifactId>springcloud</artifactId>
@@ -58,7 +58,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-configuration-processor</artifactId>
                 <version>2.6.11</version>
-                <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -86,6 +85,11 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>3.5.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>2.6.11</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>

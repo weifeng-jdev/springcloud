@@ -1,9 +1,11 @@
 package com.amano.security.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.amano.security.domain.Role;
 import com.amano.security.domain.User;
 import com.amano.security.dto.LoginInfoDTO;
 import com.amano.security.util.JwtUtil;
+import com.amano.springcloud.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;
