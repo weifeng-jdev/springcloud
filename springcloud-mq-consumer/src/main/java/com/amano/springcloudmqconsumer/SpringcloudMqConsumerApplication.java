@@ -1,13 +1,13 @@
-package com.amano.SPRING-CLOUDmqconsumer;
+package com.amano.springcloudmqconsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SPRING-CLOUDMqConsumerApplication {
+public class SpringcloudMqConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SPRING-CLOUDMqConsumerApplication.class, args);
+        SpringApplication.run(SpringcloudMqConsumerApplication.class, args);
     }
 
 }

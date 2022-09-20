@@ -1,10 +1,10 @@
-package com.amano.SPRING-CLOUDmqconsumer;
+package com.amano.springcloudmqconsumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SPRING-CLOUDMqConsumerApplicationTests {
+class springcloudmqconsumerApplicationTests {
 
     @Test
     void contextLoads() {

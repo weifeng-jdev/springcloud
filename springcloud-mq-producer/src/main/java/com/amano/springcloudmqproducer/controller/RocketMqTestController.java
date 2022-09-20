@@ -1,10 +1,11 @@
-package com.amano.SPRING-CLOUDmqproducer.controller;
+package com.amano.springcloudmqproducer.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,15 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-
 @RestController
 @Slf4j
 @RequestMapping("/test")
 public class RocketMqTestController {
     @Autowired
     private RocketMQTemplate rocketMQTemplate;
-
     @GetMapping("/send")
     public String testSendMsg(@RequestParam("msg") String msg) {
         rocketMQTemplate.convertAndSend("test", msg);
