@@ -1,0 +1,10 @@
+rocketmq:
+  name-server: 124.221.213.10:9876
+  consumer:
+    group: test-group
+    customized-trace-topic: test
+spring:
+  redis:
+    host: 124.221.213.10
+    port: 6379
+    password: redis.1995081613
