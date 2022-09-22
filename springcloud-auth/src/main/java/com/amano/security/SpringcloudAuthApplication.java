@@ -8,10 +8,10 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @SpringBootApplication
 @MapperScan("com.amano.security.dao")
 @RefreshScope
-public class SecurityApplication {
+public class SpringcloudAuthApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SecurityApplication.class, args);
+        SpringApplication.run(SpringcloudAuthApplication.class, args);
     }
 
 }
